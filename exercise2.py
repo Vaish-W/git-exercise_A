@@ -27,14 +27,12 @@ def test_point_construction() -> None:
     assert point.x == 1.0
     assert point.y == 42.0
 
-
 def test_point_vector_addition() -> None:
     point = Point2D(1.0, 2.0)
     # Task A: make the test below pass (implement __iadd__)
     point += Vector([1.1, 2.2])
     assert isclose(point.x, 2.1)
     assert isclose(point.y, 4.2)
-
 
 def test_point_vector_subtraction() -> None:
     point = Point2D(1.0, 2.0)
